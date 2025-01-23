@@ -1,8 +1,11 @@
-const express = require('express')
-const app = express()
-const port = 3000
+import express from 'express';
+import {pieRoutes} from "./src/api/pies.js";
 
-const pieRoutes = require('./src/api/pies')
+
+const app = express()
+const port = 30001
+
+
 
 app.get('/', (req, res) => {
     res.send('Hello World!')
